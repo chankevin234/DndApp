@@ -8,13 +8,13 @@ This web app will allow DnD players to track their character attributes such as:
 4. Gold
 5. Health
 
-#Structure
+# Structure
 
-##API
+## API
 https://open5e.com/api-docs
 
-##Front-End
+## Front-End
 React Frontend w/ Javascript
 
-##Back-End
+## Back-End
 C++ to call API
