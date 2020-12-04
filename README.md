@@ -14,7 +14,7 @@ This web app will allow DnD players to track their character attributes such as:
 https://open5e.com/api-docs
 
 ## Front-End
-React Frontend w/ Javascript
+Uses React Components w/ JavaScript
 
 ## Back-End
-C++ to call API
+Uses C++ to call API
