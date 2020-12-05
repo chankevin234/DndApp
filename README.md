@@ -2,11 +2,13 @@
 
 # Purpose
 This web app will allow DnD players to track their character attributes such as:
+1. Get User to Input Name
 1. Stats (str, dex, con, etc.)
-2. Items
-3. Spells
-4. Gold
-5. Health
+1. Class
+1. Items
+1. Spells
+1. Gold
+1. Health
 
 # Structure
 
