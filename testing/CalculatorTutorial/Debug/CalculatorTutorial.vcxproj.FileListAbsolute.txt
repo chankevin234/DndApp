@@ -1,0 +1,2 @@
+C:\Users\tigge\source\repos\DndApp\testing\CalculatorTutorial\Debug\CalculatorTutorial.exe
+C:\Users\tigge\source\repos\DndApp\testing\CalculatorTutorial\Debug\CalculatorTutorial.pdb
