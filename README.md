@@ -11,7 +11,6 @@ This web app will allow DnD players to track their character attributes such as:
 # Structure
 
 ## API
-https://open5e.com/api-docs
 https://api.open5e.com/
 
 
@@ -19,4 +18,5 @@ https://api.open5e.com/
 React Frontend w/ Javascript
 
 ## Back-End
-C++ to call API
+Python to call API and parse to MS Excel
+C++ to parse Excel
