@@ -7,7 +7,7 @@ def getRacesResponse(): # get Races Request
     response = requests.get("https://api.open5e.com/races/")
     responseJSON = response.json()
     
-    colNum = [0, 2]
+    colNum = [0]
     racesInfo = convert_jsonObject_to_CSV(responseJSON, colNum)
     return(racesInfo)
 
@@ -21,7 +21,7 @@ def getWeaponsResponse(): # get Weapons Request
 def getClassesResponse(): # get Classes Request
     response = requests.get("https://api.open5e.com/classes/")
     responseJSON = response.json()
-    colNum = [0, 2, 3]
+    colNum = [0, 3]
     classesInfo = convert_jsonObject_to_CSV(responseJSON, colNum)
     return(classesInfo)
 
