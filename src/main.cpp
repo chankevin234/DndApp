@@ -21,6 +21,10 @@ int main() {
     string type;
 
     filePtr.open("csvFiles/weaponsInfo.csv", ios::in);
+
+    if (!filePtr) {
+        return -1;
+    }
     
     while (getline(filePtr, name, ',')) {
         getline(filePtr, category, ',') ;
