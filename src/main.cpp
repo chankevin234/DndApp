@@ -10,10 +10,10 @@
 int main() {
     ifstream filePtr;
     
-    std::vector<Weapon> weapons;
-    std::vector<Race> races;
-    std::vector<ClassInfo> classinfos;
-    std::vector<Condition> conditions;
+    std::vector<Weapon*> weapons;
+    std::vector<Race*> races;
+    std::vector<ClassInfo*> classinfos;
+    std::vector<Condition*> conditions;
 
     string name;
     string category;
@@ -21,16 +21,12 @@ int main() {
     string type;
 
     filePtr.open("csvFiles/weaponsInfo.csv", ios::in);
-
-    if (!filePtr) {
-        return -1;
-    }
     
     while (getline(filePtr, name, ',')) {
         getline(filePtr, category, ',') ;
         getline(filePtr, dice, ',') ;
         getline(filePtr, type);
-        weapons.push_back(Weapon(name, category, dice, type));
+        weapons.push_back(new Weapon(name, category, dice, type));
     }
 
     filePtr.close();
@@ -38,21 +34,21 @@ int main() {
 
     while (getline(filePtr, name, ',')) {
         getline(filePtr, dice);
-        classinfos.push_back(ClassInfo(name, dice));
+        classinfos.push_back(new ClassInfo(name, dice));
     }
 
     filePtr.close();
     filePtr.open("csvFiles/racesInfo.csv", ios::in);
 
     while (getline(filePtr, name)) {
-        races.push_back(Race(name));
+        races.push_back(new Race(name));
     }
     
     filePtr.close();
     filePtr.open("csvFiles/conditionsInfo.csv", ios::in);
 
     while (getline(filePtr, name)) {
-        conditions.push_back(Condition(name));
+        conditions.push_back(new Condition(name));
     }
 
     filePtr.close();
