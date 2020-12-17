@@ -1,3 +1,5 @@
+//main method
+// #include adds the libraries or calls the header files
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -6,10 +8,12 @@
 #include "race.hh"
 #include "classInfo.hh"
 
-
+//main method
 int main() {
+    //creates a pointer that "points" to the location of an object
     ifstream filePtr;
     
+    // <Class> "instance of class";
     std::vector<Weapon> weapons;
     std::vector<Race> races;
     std::vector<ClassInfo> classinfos;
@@ -20,8 +24,10 @@ int main() {
     string dice;
     string type;
 
+    //beginning of pointer for weaponsInfo
     filePtr.open("csvFiles/weaponsInfo.csv", ios::in);
 
+    // checks that the return code is not -1 --> means error
     if (!filePtr) {
         return -1;
     }
