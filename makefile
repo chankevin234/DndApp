@@ -5,15 +5,15 @@ INCDIR = ./include/
 CC = g++
 CFLAGS = -std=c++11 -Wall -I./include
 
-OBJECTS = $(BINDIR)main.o $(BINDIR)classInfo.o $(BINDIR)condition.o $(BINDIR)race.o $(BINDIR)weapon.o
+OBJECTS = $(BINDIR)dndBackend.o $(BINDIR)classInfo.o $(BINDIR)condition.o $(BINDIR)race.o $(BINDIR)weapon.o
 
 all: $(BINDIR)dndBackend
 
 $(BINDIR)dndBackend: $(OBJECTS)
-	$(CC) $(OBJECTS) -o $@
+	$(CC) -shared -o libProject.so $(BINDIR)dndBackend.o $(BINDIR)classInfo.o $(BINDIR)condition.o $(BINDIR)race.o $(BINDIR)weapon.o
 
-$(BINDIR)main.o: $(SRCDIR)main.cpp
-	$(CC) $(CFLAGS) -c $(SRCDIR)main.cpp -o $@
+$(BINDIR)dndBackend.o: $(SRCDIR)dndBackend.cpp
+	$(CC) $(CFLAGS) -c $(SRCDIR)dndBackend.cpp -o $@
 
 $(BINDIR)classInfo.o: $(SRCDIR)classInfo.cpp
 	$(CC) $(CFLAGS) -c $(SRCDIR)classInfo.cpp -o $@

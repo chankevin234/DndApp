@@ -3,20 +3,12 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include "weapon.hh"
-#include "condition.hh"
-#include "race.hh"
-#include "classInfo.hh"
+#include "dndBackend.hh"
 
 //main method
-int main() {
+DndBackend::DndBackend() {
     //creates a pointer that "points" to the location of an object
     ifstream filePtr;
-    
-    std::vector<Weapon*> weapons;
-    std::vector<Race*> races;
-    std::vector<ClassInfo*> classinfos;
-    std::vector<Condition*> conditions;
 
     string name;
     string category;
@@ -56,6 +48,4 @@ int main() {
     }
 
     filePtr.close();
-
-    return 0;
 }
