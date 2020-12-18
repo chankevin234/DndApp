@@ -49,3 +49,19 @@ DndBackend::DndBackend() {
 
     filePtr.close();
 }
+
+string DndBackend::getRaceAtIndex(int i) {
+    return races[i]->name;
+}
+
+string DndBackend::getConditionAtIndex(int i) {
+    return conditions[i]->name;
+}
+
+string DndBackend::getClassesAtIndex(int i) {
+    return classinfos[i]->name + "," + classinfos[i]->hit_dice;
+}
+
+string DndBackend::getWeaponAtIndex(int i) {
+    return weapons[i]->name + "," + weapons[i]->category + "," + weapons[i]->damage_dice + "," + weapons[i]->damage_type  + ",";
+}

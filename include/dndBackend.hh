@@ -16,6 +16,10 @@ class DndBackend {
     public:
     DndBackend();
 
+    string getRaceAtIndex(int i);
+    string getConditionAtIndex(int i);
+    string getClassesAtIndex(int i);
+    string getWeaponAtIndex(int i);
 
     private:
     std::vector<Weapon*> weapons;
@@ -24,10 +28,13 @@ class DndBackend {
     std::vector<Condition*> conditions;
 };
 
-//for binding
+//for exporting
 extern "C" {
     DndBackend* DndBackend_new(){ return new DndBackend(); }
-    // add functions here once done backend
+    string getRace(DndBackend* backend, int index) { return backend->getRaceAtIndex(index); }
+    string getCondition(DndBackend* backend, int index) { return backend->getConditionAtIndex(index); }
+    string getClasses(DndBackend* backend, int index){ return backend->getClassesAtIndex(index); }
+    string getWeapon(DndBackend* backend, int index){ return backend->getWeaponAtIndex(index); }
 }
 
 #endif
