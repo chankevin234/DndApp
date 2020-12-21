@@ -1,0 +1,37 @@
+Club,Simple Melee Weapons,1d4,bludgeoning
+Dagger,Simple Melee Weapons,1d4,piercing
+Greatclub,Simple Melee Weapons,1d8,bludgeoning
+Handaxe,Simple Melee Weapons,1d6,slashing
+Javelin,Simple Melee Weapons,1d6,piercing
+Light hammer,Simple Melee Weapons,1d4,bludgeoning
+Mace,Simple Melee Weapons,1d6,bludgeoning
+Quarterstaff,Simple Melee Weapons,1d6,bludgeoning
+Sickle,Simple Melee Weapons,1d4,slashing
+Spear,Simple Melee Weapons,1d6,piercing
+Crossbow light,Simple Ranged Weapons,1d8,piercing
+Dart,Simple Ranged Weapons,1d4,piercing
+Shortbow,Simple Ranged Weapons,1d6,piercing
+Sling,Simple Ranged Weapons,1d4,bludgeoning
+Battleaxe,Martial Melee Weapons,1d8,slashing
+Flail,Martial Melee Weapons,1d8,bludgeoning
+Glaive,Martial Melee Weapons,1d10,slashing
+Greataxe,Martial Melee Weapons,1d12,slashing
+Greatsword,Martial Melee Weapons,2d6,slashing
+Halberd,Martial Melee Weapons,1d10,slashing
+Lance,Martial Melee Weapons,1d12,piercing
+Longsword,Martial Melee Weapons,1d8,slashing
+Maul,Martial Melee Weapons,2d6,bludgeoning
+Morningstar,Martial Melee Weapons,1d8,piercing
+Pike,Martial Melee Weapons,1d10,piercing
+Rapier,Martial Melee Weapons,1d8,piercing
+Scimitar,Martial Melee Weapons,1d6,slashing
+Shortsword,Martial Melee Weapons,1d6,piercing
+Trident,Martial Melee Weapons,1d6,piercing
+War pick,Martial Melee Weapons,1d8,piercing
+Warhammer,Martial Melee Weapons,1d8,bludgeoning
+Whip,Martial Melee Weapons,1d4,slashing
+Blowgun,Martial Ranged Weapons,1,piercing
+Crossbow hand,Martial Ranged Weapons,1d6,piercing
+Crossbow heavy,Martial Ranged Weapons,1d10,piercing
+Longbow,Martial Ranged Weapons,1d8,piercing
+Net,Martial Ranged Weapons,0,
