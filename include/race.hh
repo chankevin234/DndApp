@@ -9,8 +9,9 @@ using namespace std;
 //Declare race class
 class Race {
     public:
+    //constructor
     Race(string toBeNamed);
-
+    //local var
     string name;
 };
 

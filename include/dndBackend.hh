@@ -4,6 +4,7 @@
 #include <string>
 #include <iostream>
 #include <vector>
+//calls the header files where classes were instantiated
 #include "weapon.hh"
 #include "condition.hh"
 #include "race.hh"
@@ -14,12 +15,10 @@ using namespace std;
 //Declare condition class
 class DndBackend {
     public:
+    //constructor
     DndBackend();
 
-    string getRaceAtIndex(int i);
-    string getConditionAtIndex(int i);
-    string getClassesAtIndex(int i);
-    string getWeaponAtIndex(int i);
+    //these are all arrays that contain the information --> this is calling from the dndBackend.cpp file where "while loops" are pulling the info into arrays
 
     private:
     std::vector<Weapon*> weapons;
@@ -28,8 +27,11 @@ class DndBackend {
     std::vector<Condition*> conditions;
 };
 
-//for exporting
+//for binding
+//this section is read by JavaScript only! 
+//front end sees these below
 extern "C" {
+    //DndBackend* is the pointer
     DndBackend* DndBackend_new(){ return new DndBackend(); }
     string getRace(DndBackend* backend, int index) { return backend->getRaceAtIndex(index); }
     string getCondition(DndBackend* backend, int index) { return backend->getConditionAtIndex(index); }
