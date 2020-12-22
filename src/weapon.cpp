@@ -1,4 +1,4 @@
-#include "weapon.hh"
+#include "weapon.hpp"
 #include <iostream>
 #include <string>
 

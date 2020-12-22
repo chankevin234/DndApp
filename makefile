@@ -10,7 +10,7 @@ OBJECTS = $(BINDIR)dndBackend.o $(BINDIR)classInfo.o $(BINDIR)condition.o $(BIND
 all: $(BINDIR)dndBackend
 
 $(BINDIR)dndBackend: $(OBJECTS)
-	$(CC) -shared -o libProject.so $(BINDIR)dndBackend.o $(BINDIR)classInfo.o $(BINDIR)condition.o $(BINDIR)race.o $(BINDIR)weapon.o
+	$(CC) -shared -o libProject.dll $(BINDIR)dndBackend.o $(BINDIR)classInfo.o $(BINDIR)condition.o $(BINDIR)race.o $(BINDIR)weapon.o
 
 $(BINDIR)dndBackend.o: $(SRCDIR)dndBackend.cpp
 	$(CC) $(CFLAGS) -c $(SRCDIR)dndBackend.cpp -o $@

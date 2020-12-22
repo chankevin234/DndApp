@@ -5,10 +5,10 @@
 #include <iostream>
 #include <vector>
 //calls the header files where classes were instantiated
-#include "weapon.hh"
-#include "condition.hh"
-#include "race.hh"
-#include "classInfo.hh"
+#include "weapon.hpp"
+#include "condition.hpp"
+#include "race.hpp"
+#include "classInfo.hpp"
 
 using namespace std;
 

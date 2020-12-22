@@ -1,5 +1,5 @@
 //the logic of class "ClassInfo"
-#include "classInfo.hh"
+#include "classInfo.hpp"
 #include <iostream>
 #include <string>
 

@@ -1,4 +1,4 @@
-#include "race.hh"
+#include "race.hpp"
 #include <iostream>
 #include <string>
 

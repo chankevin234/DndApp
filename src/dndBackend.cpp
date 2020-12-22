@@ -3,7 +3,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include "dndBackend.hh"
+#include "dndBackend.hpp"
 
 //main method
 DndBackend::DndBackend() {
